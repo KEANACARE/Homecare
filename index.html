@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ <style>
+/* This makes the navigation stay at the top while you scroll */
+.sticky-header {
+position: sticky;
+top: 0;
+z-index: 1000;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* This makes the buttons "glow" or change slightly when hovered */
+.btn-hover:hover {
+opacity: 0.8;
+transform: translateY(-2px);
+box-shadow: 0 6px 15px rgba(0,0,0,0.2) !important;
+}
+
+/* Smooth scrolling for the whole page */
+html {
+scroll-behavior: smooth;
+}
+</style>
+ 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Keana's Home Care</title>
