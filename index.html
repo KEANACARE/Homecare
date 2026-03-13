@@ -106,38 +106,57 @@ color: #bdc3c7;
 
 
 
-<!-- Section 3: Hero Section with Circle Text -->
-<div style="
-position: relative;
-height: 500px;
-background: url('https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1350&q=80');
-background-size: cover;
-background-position: center;
-display: flex;
-align-items: center;
-justify-content: center;">
+<!-- Section 3: Animated Hero Slider (4 Slides) -->
+<div id="slider-container" style="position: relative; height: 500px; width: 100%; overflow: hidden; background: #2c3e50;">
 
-<!-- The Purple/Navy Circle (Restoration Style) -->
-<div style="
-background-color: rgba(44, 62, 80, 0.9); /* Your Logo Navy Blue */
-color: white;
-width: 350px;
-height: 350px;
-border-radius: 50%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-padding: 20px;
-border: 5px solid white;
-box-shadow: 0 0 20px rgba(0,0,0,0.3);
-z-index: 10;">
+<!-- Slide 1 -->
+<div class="mySlides" style="display: block; height: 500px; background: url('https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1350&q=80') center/cover; position: relative;">
+<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(255,255,255,0.9); padding: 20px 40px; border-radius: 5px; text-align: center; border: 3px solid #6a11cb; box-shadow: 0 10px 30px rgba(0,0,0,0.3); min-width: 300px;">
+<h1 style="color: #2c3e50; margin: 0; font-family: serif; letter-spacing: 2px;">KEANA'S HOME CARE</h1>
+<p style="color: #6a11cb; font-weight: bold; margin-top: 5px;">Compassionate Support</p>
+</div>
+</div>
 
-<h2 style="margin: 0; font-size: 1.8rem; text-transform: uppercase;">Keana's Home Care</h2>
-<hr style="width: 50%; border: 1px solid white; margin: 15px 0;">
-<p style="font-size: 1rem; margin: 0; line-height: 1.4;">
-Our service offers a person-centered therapeutic approach based on wellness and compassionate support.
+<!-- Slide 2 -->
+<div class="mySlides" style="display: none; height: 500px; background: url('https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=1350&q=80') center/cover; position: relative;">
+<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(255,255,255,0.9); padding: 20px 40px; border-radius: 5px; text-align: center; border: 3px solid #2575fc; box-shadow: 0 10px 30px rgba(0,0,0,0.3); min-width: 300px;">
+<h1 style="color: #2c3e50; margin: 0; font-family: serif; letter-spacing: 2px;">EXCELLENCE IN CARE</h1>
+<p style="color: #2575fc; font-weight: bold; margin-top: 5px;">Professional & Kind</p>
+</div>
+</div>
+
+<!-- Slide 3 -->
+<div class="mySlides" style="display: none; height: 500px; background: url('https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?auto=format&fit=crop&w=1350&q=80') center/cover; position: relative;">
+<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(255,255,255,0.9); padding: 20px 40px; border-radius: 5px; text-align: center; border: 3px solid #27ae60; box-shadow: 0 10px 30px rgba(0,0,0,0.3); min-width: 300px;">
+<h1 style="color: #2c3e50; margin: 0; font-family: serif; letter-spacing: 2px;">OUR SERVICES</h1>
+<p style="color: #27ae60; font-weight: bold; margin-top: 5px;">Tailored to Your Needs</p>
+</div>
+</div>
+
+<!-- Slide 4 -->
+<div class="mySlides" style="display: none; height: 500px; background: url('https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=1350&q=80') center/cover; position: relative;">
+<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(255,255,255,0.9); padding: 20px 40px; border-radius: 5px; text-align: center; border: 3px solid #e67e22; box-shadow: 0 10px 30px rgba(0,0,0,0.3); min-width: 300px;">
+<h1 style="color: #2c3e50; margin: 0; font-family: serif; letter-spacing: 2px;">JOIN OUR TEAM</h1>
+<p style="color: #e67e22; font-weight: bold; margin-top: 5px;">Careers in Care</p>
+</div>
+</div>
+
+</div>
+
+<script>
+let slideIndex = 0;
+function showSlides() {
+let slides = document.getElementsByClassName("mySlides");
+for (let i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+slides[slideIndex-1].style.display = "block";
+setTimeout(showSlides, 4000);
+}
+showSlides();
+</script>
 </p>
 </div>
 </div>
