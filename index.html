@@ -3,79 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Keana's Home Care | Professional & Compassionate Support</title>
+<title>Keana's Home Care</title>
 <style>
-/* Theme Colors from your Logo */
+/* Exact Colors from your Logo */
 :root {
---primary-blue: #2c3e50; /* The exact blue from your logo */
---soft-white: #ffffff;
---light-gray: #f8f9fa;
+--navy-blue: #2c3e50;
+--white: #ffffff;
+--light-gray: #f4f4f4;
 }
 
-body { font-family: 'Georgia', serif; margin: 0; color: #333; line-height: 1.6; }
+body { margin: 0; font-family: 'Arial', sans-serif; background-color: #fff; }
 
-/* Header */
-header { background: var(--soft-white); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--primary-blue); position: sticky; top: 0; z-index: 1000; }
-.logo-text { font-size: 1.8rem; font-weight: bold; color: var(--primary-blue); }
-
-/* Hero Section */
-.hero {
-background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?auto=format&fit=crop&w=1350&q=80');
-background-size: cover; background-position: center; height: 60vh; display: flex; flex-direction: column;
-justify-content: center; align-items: center; color: white; text-align: center; padding: 0 20px;
+/* Top Bar with Logo and Contacts */
+.top-header {
+background-color: var(--navy-blue);
+color: white;
+padding: 20px 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
-.hero h1 { font-size: 3.5rem; margin: 0; font-family: 'Georgia', serif; }
-.hero p { font-size: 1.4rem; max-width: 800px; margin: 20px 0; }
 
-/* Buttons */
-.btn { background: var(--primary-blue); color: white; padding: 15px 35px; text-decoration: none; font-weight: bold; border-radius: 4px; transition: 0.3s; display: inline-block; font-size: 1.1rem; }
-.btn:hover { background: #1a252f; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+.logo-box {
+background: white;
+padding: 10px;
+border-radius: 5px;
+/* Replace 'logo.jpg' with your actual logo filename later */
+width: 150px;
+text-align: center;
+}
 
-/* Sections */
-.section { padding: 80px 10%; text-align: center; background: var(--soft-white); }
-.section h2 { color: var(--primary-blue); font-size: 2.5rem; margin-bottom: 30px; font-family: 'Georgia', serif; }
+.contact-details {
+text-align: right;
+font-size: 0.9rem;
+line-height: 1.5;
+}
 
-/* Services Grid */
-.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
-.service-card { background: var(--light-gray); padding: 40px 20px; border-radius: 5px; border: 1px solid #ddd; transition: 0.3s; }
-.service-card h3 { color: var(--primary-blue); margin-top: 0; font-size: 1.5rem; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
-.service-card:hover { transform: translateY(-5px); background: #fff; border-color: var(--primary-blue); }
+/* The Menu Bar */
+nav {
+background-color: #34495e; /* Slightly lighter navy for the menu */
+padding: 10px 5%;
+border-top: 1px solid rgba(255,255,255,0.1);
+}
 
-.footer { background: var(--primary-blue); color: white; padding: 60px 10%; text-align: center; }
+nav a {
+color: white;
+text-decoration: none;
+margin-right: 20px;
+font-weight: bold;
+font-size: 0.85rem;
+text-transform: uppercase;
+}
+
+nav a:hover {
+color: #bdc3c7;
+}
 </style>
 </head>
 <body>
 
-<header>
-<div class="logo-text">Keana's Home Care</div>
-<div style="font-style: italic; color: var(--primary-blue);">Compassionate Professional Care</div>
-</header>
-
-<section class="hero">
-<h1>Care from the Heart</h1>
-<p>Providing trusted in-home health care and support services to ensure your loved ones live with dignity and independence.</p>
-<a href="https://wa.me/YOUR_NUMBER" class="btn">REQUEST A CONSULTATION</a>
-</section>
-
-<section class="section">
-<h2>Our Specialist Services</h2>
-<div class="services-grid">
-<div class="service-card"><h3>Home Health Care</h3><p>Professional nursing and health monitoring services delivered to your door.</p></div>
-<div class="service-card"><h3>Personal Care</h3><p>Support with daily activities, hygiene, and mobility with absolute dignity.</p></div>
-<div class="service-card"><h3>Deep Cleaning</h3><p>Specialist cleaning to maintain a safe, sanitized, and healthy living space.</p></div>
-<div class="service-card"><h3>Post-Operative Care</h3><p>Essential recovery support to help you get back on your feet after surgery.</p></div>
-<div class="service-card"><h3>Dementia Support</h3><p>Patient, memory-focused care provided by experienced specialists.</p></div>
-<div class="service-card"><h3>Companionship</h3><p>Engaging social visits and emotional support to ensure no one feels alone.</p></div>
-<div class="service-card"><h3>Meal Preparation</h3><p>Nutritious and delicious meals prepared specifically for your dietary needs.</p></div>
+<!-- Section 1: Top Branding -->
+<div class="top-header">
+<div class="logo-box">
+<!-- This is a placeholder until you add your logo image file -->
+<span style="color: var(--navy-blue); font-weight: bold;">KEANA'S LOGO</span>
 </div>
-</section>
 
-<footer class="footer">
-<h2 style="color: white; border: none;">Keana's Home Care</h2>
-<p>Serving communities across the UK with heart and professionalism.</p>
-<p style="margin: 25px 0;">Phone: YOUR_PHONE | Email: (Setting up Zoho)</p>
-<a href="https://wa.me/YOUR_NUMBER" class="btn" style="background: white; color: var(--primary-blue);">CONTACT US VIA WHATSAPP</a>
-</footer>
+<div class="contact-details">
+<div><strong>Tel No:</strong> YOUR_PHONE_HERE</div>
+<div><strong>Email:</strong> (ZOHO EMAIL PENDING)</div>
+<div><strong>Location:</strong> Serving UK Nationwide</div>
+</div>
+</div>
+
+<!-- Section 2: Navigation Menu -->
+<nav>
+<a href="#">Home</a>
+<a href="#">About Us</a>
+<a href="#">Services</a>
+<a href="#">Careers</a>
+<a href="#">Contact Us</a>
+</nav>
 
 </body>
 </html>
