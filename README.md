@@ -80,7 +80,9 @@
 <body>
 
     <header>
-        <div class="logo"><strong>KEANA’S HOME CARE</strong></div>
+    <div class="logo">
+  <img src="Logo.JPG" alt="Keana's Home Care Logo" style="height: 60px; width: auto; display: block; margin: 0 auto;">
+</div>
         <nav>
             <a href="mailto:khcservices1@gmail.com" style="color:white; text-decoration:none;">Contact Us</a>
         </nav>
