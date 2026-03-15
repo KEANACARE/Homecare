@@ -109,7 +109,58 @@
             </div>
         </div>
     </section>
+<!-- Section 3: Animated Hero Slider -->
+<div style="position: relative; width: 100%; height: 500px; overflow: hidden; background: #eee;">
+  
+  <div class="mySlides" style="display: block;">
+    <img src="slide1.JPG" style="width:100%; height:500px; object-fit:cover;">
+    <div style="position: absolute; top: 50%; width:100%; text-align:center; transform: translateY(-50%);">
+      <h1 style="color: #2c3e50; margin: 0; background: rgba(255,255,255,0.7); display: inline-block; padding: 10px; border-radius: 5px;">Compassionate Care</h1>
+      <p style="color: #6a11cb; font-weight: bold; background: rgba(255,255,255,0.7); display: block; width: fit-content; margin: 10px auto; padding: 5px; border-radius: 5px;">Professional Support at Home</p>
+    </div>
+  </div>
 
+  <div class="mySlides" style="display: none;">
+    <img src="slide2.JPG" style="width:100%; height:500px; object-fit:cover;">
+    <div style="position: absolute; top: 50%; width:100%; text-align:center; transform: translateY(-50%);">
+      <h1 style="color: #2c3e50; margin: 0; background: rgba(255,255,255,0.7); display: inline-block; padding: 10px; border-radius: 5px;">Your Health, Our Priority</h1>
+      <p style="color: #2575fc; font-weight: bold; background: rgba(255,255,255,0.7); display: block; width: fit-content; margin: 10px auto; padding: 5px; border-radius: 5px;">Tailored to Your Needs</p>
+    </div>
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <img src="slide3.JPG" style="width:100%; height:500px; object-fit:cover;">
+    <div style="position: absolute; top: 50%; width:100%; text-align:center; transform: translateY(-50%);">
+      <h1 style="color: #2c3e50; margin: 0; background: rgba(255,255,255,0.7); display: inline-block; padding: 10px; border-radius: 5px;">Trusted Professionals</h1>
+      <p style="color: #27ae60; font-weight: bold; background: rgba(255,255,255,0.7); display: block; width: fit-content; margin: 10px auto; padding: 5px; border-radius: 5px;">Expertise You Can Lean On</p>
+    </div>
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <img src="slide4.JPG" style="width:100%; height:500px; object-fit:cover;">
+    <div style="position: absolute; top: 50%; width:100%; text-align:center; transform: translateY(-50%);">
+      <h1 style="color: #2c3e50; margin: 0; background: rgba(255,255,255,0.7); display: inline-block; padding: 10px; border-radius: 5px;">Available 24/7</h1>
+      <p style="color: #e67e22; font-weight: bold; background: rgba(255,255,255,0.7); display: block; width: fit-content; margin: 10px auto; padding: 5px; border-radius: 5px;">We Are Always Here for You</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 4000);
+}
+</script>
     <section class="contact-info">
         <h2>Get In Touch</h2>
         <p>We are here to answer your questions and provide the support you need.</p>
