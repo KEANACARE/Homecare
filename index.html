@@ -2,13 +2,32 @@
 <html lang="en">
 <head>
  <style>
-/* Exact Colors from your Logo */
+* GLOBAL STYLES */
 :root {
 --navy-blue: #2c3e50;
 --white: #ffffff;
---light-gray: #f4f4f4;
---bright-blue: #3498db;
 }
+
+/* 1. FIX THE TOP MENU BUTTONS - FORCES THEM TO BE WHITE */
+nav a, nav a:visited, .sticky-header a {
+color: #ffffff !important;
+text-decoration: none !important;
+}
+
+/* 2. FIX THE ABOUT US & MISSION SECTIONS - FORCES WHITE BACKGROUND & NAVY TEXT */
+#about-us, .about-section, .mission-outer, .mission-box, #mission-section {
+background-color: #ffffff !important;
+color: #2c3e50 !important;
+padding: 60px 20px !important;
+display: block !important;
+}
+
+/* 3. FORCES ALL TEXT INSIDE THESE SECTIONS TO BE NAVY BLUE */
+#about-us p, #about-us h1, #about-us h2, #about-us li,
+.mission-box p, .mission-box h1, .mission-box h2 {
+color: #2c3e50 !important;
+}
+
 
 body { margin: 0; font-family: 'Arial', sans-serif; background-color: #fff; }
 
